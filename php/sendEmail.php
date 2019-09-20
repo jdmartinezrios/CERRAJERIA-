@@ -1,5 +1,5 @@
 <?php
-$admin_email = "tinrios3@gmail.com";
+$admin_email = "gustavo11casta@gmail.com";
 $name = $_POST["Nombre"];
 $asunto = $_POST["Asunto"];
 $message = $_POST["Mensaje"];

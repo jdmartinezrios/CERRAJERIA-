@@ -593,8 +593,9 @@ function bindEvents(map, marker, infoWindow) {
     });
 }
 
-function loadScript(language, clientKey) {
-    var clientKeyUrlParam = clientKey ? '&key=' + clientKey : '&client=gme-wixcomltd2';
+function loadScript(language = navigator.language || navigator.userLanguage, clientKey = '&key=AIzaSyDdyLN-__zCnwcH9DpCDw3KgmoCnCSn1Ac') {
+    // var clientKeyUrlParam = clientKey ? '&key=' + clientKey : '&client=gme-wixcomltd2';
+    var clientKeyUrlParam = clientKey;
 
     var scriptNode = window.document.createElement('script');
     scriptNode.type = 'text/javascript';
